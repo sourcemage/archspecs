@@ -1,0 +1,11 @@
+CPUNAME="Intel Extended Memory 64 Technology"
+if use_gcc 3.3. ; then
+  CFLAGS="-march=pentium4 -mmmx -mfpmath=sse -msse -msse2 -m3dnow -m32"
+elif use_gcc2 ; then
+  CFLAGS="-march=i686"
+else
+  CFLAGS="-march=nocona -mmmx -mfpmath=sse -msse -msse2 -m3dnow -m32"
+fi
+HOST="i686-pc-linux-gnu"
+FAST="-O3"
+SMALL="-Os"
