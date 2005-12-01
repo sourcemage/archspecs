@@ -1,0 +1,6 @@
+CPUNAME="null"
+
+CFLAGS=
+HOST=
+FAST="-O3"
+SMALL="-Os"
