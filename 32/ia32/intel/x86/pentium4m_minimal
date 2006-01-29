@@ -1,0 +1,11 @@
+CPUNAME="Intel Pentium IV mobile (minimal optimizaitons)"
+if use_gcc2; then
+ CFLAGS="-march=i686"
+elif use_gcc 3.3; then
+ CFLAGS="-march=pentium4"
+else
+ CFLAGS="-march=pentium4m"
+fi
+   HOST="i686-pc-linux-gnu"
+   FAST="-O3"
+  SMALL="-Os"
