@@ -1,4 +1,4 @@
-CPUNAME="AMD Athlon 64, Athlon 64 FX and Opteron"
+CPUNAME="AMD Athlon 64, Athlon 64 FX and Opteron (32-bit mode)"
 if use_gcc 3.3. ; then
   CFLAGS="-march=athlon-xp -mmmx -mfpmath=sse -msse -msse2 -m3dnow -m32"
 elif use_gcc2 ; then

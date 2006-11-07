@@ -1,4 +1,4 @@
-CPUNAME="x86-64, Athlon 64 FX, Opteron and Intel EM64T"
+CPUNAME="x86-64, Athlon 64 FX, Opteron and Intel EM64T (32-bit mode)"
 if use_gcc 3.3. ; then
   CFLAGS="-march=i686 -mmmx -mfpmath=sse -msse -msse2 -m3dnow -m32"
 elif use_gcc2 ; then
