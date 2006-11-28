@@ -1,10 +1,10 @@
-CPUNAME="Intel Pentium Mobile (minimal optimizations)"
+CPUNAME="Intel mobile Pentium III-M (minimal optimizations)"
 if use_gcc2; then
  CFLAGS="-march=i686"
 elif use_gcc 3.3; then
  CFLAGS="-march=pentium3"
 else
- CFLAGS="-march=pentium-m"
+ CFLAGS="-march=pentium3m"
 fi
    HOST="i686-pc-linux-gnu"
    FAST="-O3"
