@@ -1,5 +1,5 @@
 CPUNAME="IBM/Motorola Powerpc G5 (860)"
  CFLAGS="-mcpu=860 -maltivec -mabi=altivec"
-   HOST="powerpc-linux-gnu"
+   HOST="powerpc-unknown-linux-gnu"
    FAST="-O3"
   SMALL="-Os"
