@@ -1,5 +1,5 @@
 CPUNAME="IBM/Motorola Powerpc G5 (860) 64Bit Mode"
  CFLAGS="-mcpu=860 -maltivec -mabi=altivec -mpowerpc64"
-   HOST="powerpc-linux-gnu"
+   HOST="powerpc64-unknown-linux-gnu"
    FAST="-O3"
   SMALL="-Os"
