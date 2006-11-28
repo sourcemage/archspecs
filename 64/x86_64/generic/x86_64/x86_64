@@ -1,11 +1,11 @@
 CPUNAME="x86-64, Athlon 64 FX, Opteron and Intel EM64T"
 
 if use_gcc 3.3. ; then
-  CFLAGS="-march=i686 -mmmx -mfpmath=sse -msse -msse2 -m3dnow -m64"
+  CFLAGS="-mmmx -mfpmath=sse -msse -msse2 -m3dnow"
 elif use_gcc2 ; then
   CFLAGS="-march=i686"
 else
-  CFLAGS="-march=x86-64 -mmmx -mfpmath=sse -msse -msse2 -m3dnow -m64 -fPIC -DPIC"
+  CFLAGS="-march=x86-64 -mmmx -mfpmath=sse -msse -msse2 -m3dnow -fPIC -DPIC"
 fi
 
 HOST="x86_64-pc-linux-gnu"
