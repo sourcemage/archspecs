@@ -1,11 +1,11 @@
 CPUNAME="AMD Athlon 64, Athlon 64 FX and Opteron (minimal optimizations)"
-
 if use_gcc 3.3. ; then
-  CFLAGS="-march=athlon-xp -m64"
+  CFLAGS=""
+# gcc2 won't actually do any 64 bit compiling
 elif use_gcc2 ; then
   CFLAGS="-march=i686"
 else
-  CFLAGS="-march=k8 -m64 -fPIC -DPIC"
+  CFLAGS="-march=k8 -fPIC -DPIC"
 fi
 
 HOST="x86_64-pc-linux-gnu"
