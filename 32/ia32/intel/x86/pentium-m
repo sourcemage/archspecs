@@ -1,0 +1,11 @@
+CPUNAME="Intel Pentium M (Centrino), SSE fpmath"
+if use_gcc2; then
+ CFLAGS="-march=i686"
+elif use_gcc 3.3; then
+ CFLAGS="-march=pentium3 -mfpmath=sse"
+else
+ CFLAGS="-march=pentium-m -mfpmath=sse"
+fi
+HOST="i686-pc-linux-gnu"
+FAST="-O3"
+SMALL="-Os"
