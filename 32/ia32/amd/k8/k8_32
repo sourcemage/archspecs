@@ -1,6 +1,6 @@
 CPUNAME="AMD Athlon 64, Athlon 64 FX and Opteron (32-bit mode)"
 if use_gcc 3.3. ; then
-  CFLAGS="-march=athlon-xp"
+  CFLAGS="-march=athlon-xp -m32"
 elif use_gcc2 ; then
   CFLAGS="-march=i686"
 else
