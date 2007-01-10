@@ -1,8 +1,8 @@
-CPUNAME="Intel Pentium IV (Prescott)"
+CPUNAME="Intel Pentium 4 (Prescott) and Core"
 if use_gcc2; then
   CFLAGS="-march=i686"
 else
-  CFLAGS="-march=prescott -mmmx -mfpmath=sse -msse -msse2 -msse3"
+  CFLAGS="-march=prescott"
 fi
 HOST="i686-pc-linux-gnu"
 FAST="-O3"

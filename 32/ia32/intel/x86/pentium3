@@ -2,7 +2,7 @@ CPUNAME="Intel Pentium III"
 if use_gcc2; then
  CFLAGS="-march=i686"
 else
- CFLAGS="-march=pentium3 -mmmx -mfpmath=sse -msse"
+ CFLAGS="-march=pentium3"
 fi
    HOST="i686-pc-linux-gnu"
    FAST="-O3"

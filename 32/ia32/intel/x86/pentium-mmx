@@ -2,7 +2,7 @@ CPUNAME="Intel Pentium with MMX"
 if use_gcc2; then
  CFLAGS="-march=i586"
 else
- CFLAGS="-march=pentium-mmx -mmmx"
+ CFLAGS="-march=pentium-mmx"
 fi
    HOST="i586-pc-linux-gnu"
    FAST="-O2"
