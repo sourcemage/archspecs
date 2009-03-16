@@ -1,6 +1,8 @@
-CPUNAME="Pentium4/Xeon with EM64T"
+CPUNAME="Intel Core 2 with EM64T"
 
-if use_gcc 3.3. ; then
+if use_gcc 4.3. ; then
+  CFLAGS="-march=core2 -fPIC -DPIC"
+elif use_gcc 3.3. ; then
   CFLAGS="-march=nocona -fPIC -DPIC"
 elif use_gcc2 ; then
   CFLAGS="-march=i686"
