@@ -1,4 +1,4 @@
-CPUNAME="Pentium4/Xeon with EM64T, 32bit mode"
+CPUNAME="Intel Pentium4/Xeon with EM64T, 32bit mode"
 if use_gcc 3.3. ; then
   CFLAGS="-march=nocona -m32"
 elif use_gcc2 ; then

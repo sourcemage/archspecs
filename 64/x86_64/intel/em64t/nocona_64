@@ -1,4 +1,4 @@
-CPUNAME="Pentium4/Xeon with EM64T"
+CPUNAME="Intel Pentium4/Xeon with EM64T"
 
 if use_gcc 3.3. ; then
   CFLAGS="-march=nocona -fPIC -DPIC"
