@@ -5,7 +5,7 @@ if use_gcc 3.3. ; then
 elif use_gcc2 ; then
   CFLAGS="-march=i686"
 else
-  CFLAGS="-march=nocona -fPIC -DPIC"
+  CFLAGS="-march=nocona -fPIC -DPIC -mmmx -mfpmath=sse -msse -msse2 -msse3"
 fi
 
 HOST="x86_64-pc-linux-gnu"
