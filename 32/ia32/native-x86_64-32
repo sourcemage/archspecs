@@ -1,0 +1,16 @@
+CPUNAME="Auto-detected x86/x86_64 architecture 32-bit mode"
+
+if use_gcc 3.3. || use_gcc 3.4. || use_gcc 4.0. || use_gcc 4.1. ; then
+  CFLAGS="-march=i486 -m32"
+  HOST="i486-pc-linux-gnu"
+elif use_gcc2 ; then
+  CFLAGS="-march=i486"
+  HOST="i486-pc-linux-gnu"
+else
+  CFLAGS="-march=native -mtune=native -m32"
+  HOST="i686-pc-linux-gnu"
+fi
+
+FAST="-O3"
+SMALL="-Os"
+
