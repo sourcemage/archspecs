@@ -3,7 +3,7 @@ if use_gcc2; then
  CFLAGS="-march=i686"
 else
  # Note: for gcc <3.3 then -march=i686, for gcc >3.3.2 then -march=c3-2
- CFLAGS="-march=c3-2 -msse -mmmx -mfpmath=sse -pipe" # note no 3dnow support, sse instead
+ CFLAGS="-march=c3-2 -pipe" # note no 3dnow support, sse instead
                                                      # see http://www.courville.org/phpwiki/Gcc
 fi
    HOST="i686-pc-linux-gnu"
