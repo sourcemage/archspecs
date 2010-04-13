@@ -1,7 +1,7 @@
 CPUNAME="Intel Core 2 with EM64T"
 
 if use_gcc 3.3. || use_gcc 3.4. || use_gcc 4.0. || use_gcc 4.1. || use_gcc 4.2.; then
-  CFLAGS="-march=nocona -fPIC -DPIC"
+  CFLAGS="-march=nocona -fPIC -DPIC -mmmx -mfpmath=sse -msse -msse2 -msse3"
 elif use_gcc2 ; then
   CFLAGS="-march=i686"
 else
