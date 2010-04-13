@@ -1,7 +1,7 @@
 CPUNAME="Intel Pentium4/Xeon with EM64T"
 
 if use_gcc 3.3. ; then
-  CFLAGS="-march=nocona -fPIC -DPIC -mmmx -mfpmath=sse -msse -msse2 -msse3"
+  CFLAGS="-march=nocona -fPIC -DPIC"
 elif use_gcc2 ; then
   CFLAGS="-march=i686"
 else
