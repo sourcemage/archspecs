@@ -5,7 +5,7 @@ if use_gcc 3.3. || use_gcc 3.4. || use_gcc 4.0. || use_gcc 4.1. || use_gcc 4.2.;
 elif use_gcc2 ; then
   CFLAGS="-march=i686"
 else
-  CFLAGS="-march=core2 -m32 -mmmx -mfpmath=sse -msse -msse2 -msse3 -mssse3"
+  CFLAGS="-march=core2 -m32"
 fi
 
 HOST="i686-pc-linux-gnu"
