@@ -3,7 +3,7 @@ if use_gcc2; then
  CFLAGS="-march=i586"
 else
  # Note: for gcc <3.3 then -march=i586
- CFLAGS="-march=i586 -m3dnow -mmx -pipe" # gcc at least 4.0.2 has c3 as 486, ezra is 686 minus x86_cmove, so 586 is supported
+ CFLAGS="-march=i586 -m3dnow -mmx" # gcc at least 4.0.2 has c3 as 486, ezra is 686 minus x86_cmove, so 586 is supported
                                          # see http://www.courville.org/phpwiki/Gcc
 fi
    HOST="i586-pc-linux-gnu"
