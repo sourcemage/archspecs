@@ -2,7 +2,7 @@ CPUNAME="AMD Athlon XP"
 if use_gcc2; then
  CFLAGS="-march=i686"
 else
- CFLAGS="-march=athlon-xp -mmmx -mfpmath=sse -msse -m3dnow"
+ CFLAGS="-march=athlon-xp"
 fi
    HOST="i686-pc-linux-gnu"
    FAST="-O3"
