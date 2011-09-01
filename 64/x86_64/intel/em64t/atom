@@ -1,0 +1,12 @@
+CPUNAME="Intel Atom 64bit (all except Z5xx, Z6xx and N2xx)"
+
+if use_gcc2 ; then
+  CFLAGS="-march=i686"
+else
+  CFLAGS="-march=atom -fPIC -DPIC"
+fi
+
+HOST="x86_64-pc-linux-gnu"
+FAST="-O3"
+SMALL="-Os"
+
