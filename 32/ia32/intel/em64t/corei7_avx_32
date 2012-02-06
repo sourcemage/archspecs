@@ -1,0 +1,14 @@
+CPUNAME="Intel Core i7"
+
+if use_gcc 3.3. || use_gcc 3.4. || use_gcc 4.0. || use_gcc 4.1. || use_gcc 4.2.; then
+  CFLAGS="-march=nocona -m32"
+elif use_gcc2 ; then
+  CFLAGS="-march=i686"
+else
+  CFLAGS="-march=corei7-avx -msahf -m32"
+fi
+
+HOST="x86_64-pc-linux-gnu"
+FAST="-O3"
+SMALL="-Os"
+
