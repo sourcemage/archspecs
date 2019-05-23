@@ -6,6 +6,6 @@ elif use_gcc2 ; then
 else
   CFLAGS="-march=nocona -m32"
 fi
-HOST="i686-pc-linux-gnu"
+HOST="i686-pc-linux-${HOST_LIBC:-gnu}"
 FAST="-O3"
 SMALL="-Os"

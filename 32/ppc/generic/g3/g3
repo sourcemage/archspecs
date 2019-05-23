@@ -1,5 +1,5 @@
 CPUNAME="IBM/Motorola Powerpc G3 (740)"
  CFLAGS="-mcpu=740"
-   HOST="powerpc-unknown-linux-gnu"
+   HOST="powerpc-unknown-linux-${HOST_LIBC:-gnu}"
    FAST="-O3"
   SMALL="-Os"

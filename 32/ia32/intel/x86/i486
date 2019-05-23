@@ -1,5 +1,5 @@
 CPUNAME="Intel 80486 and clones"
  CFLAGS="-march=i486"
-   HOST="i486-pc-linux-gnu"
+   HOST="i486-pc-linux-${HOST_LIBC:-gnu}"
    FAST="-O2"
   SMALL="-Os"

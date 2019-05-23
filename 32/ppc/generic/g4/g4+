@@ -4,6 +4,6 @@ if use_gcc2; then
 else
  CFLAGS="-mcpu=7450 -maltivec -mabi=altivec"
 fi
-   HOST="powerpc-unknown-linux-gnu"
+   HOST="powerpc-unknown-linux-${HOST_LIBC:-gnu}"
    FAST="-O3"
   SMALL="-Os"

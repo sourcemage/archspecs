@@ -8,7 +8,7 @@ else
   CFLAGS="-march=x86-64 -fPIC -DPIC"
 fi
 
-HOST="x86_64-pc-linux-gnu"
+HOST="x86_64-pc-linux-${HOST_LIBC:-gnu}"
 FAST="-O3"
 SMALL="-Os"
 

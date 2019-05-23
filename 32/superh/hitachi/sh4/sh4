@@ -1,5 +1,5 @@
 CPUNAME="Hitachi SuperH (SH4) (Dreamcast)"
  CFLAGS="-m4 -ml"
-   HOST="sh4-linux-gnu"
+   HOST="sh4-linux-${HOST_LIBC:-gnu}"
    FAST="-O3"
   SMALL="-Os"

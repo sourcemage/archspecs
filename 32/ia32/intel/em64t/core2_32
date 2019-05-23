@@ -8,6 +8,6 @@ else
   CFLAGS="-march=core2 -m32"
 fi
 
-HOST="i686-pc-linux-gnu"
+HOST="i686-pc-linux-${HOST_LIBC:-gnu}"
 FAST="-O3"
 SMALL="-Os"

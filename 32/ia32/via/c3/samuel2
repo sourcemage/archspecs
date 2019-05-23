@@ -6,7 +6,7 @@ else
  CFLAGS="-march=c3" # gcc at least 4.0.2 has c3 as 486, samuel2 is 686 minus x86_cmove, so 586 is supported
                                         # see http://www.courville.org/phpwiki/Gcc
 fi
-   HOST="i586-pc-linux-gnu"
+   HOST="i586-pc-linux-${HOST_LIBC:-gnu}"
    FAST="-O3" # Note: should this be -Os
               # see: http://www.epiawiki.org/wiki/tiki-index.php?page=EpiaInstallingGentoo
   SMALL="-Os"

@@ -1,5 +1,5 @@
 CPUNAME="Sun UltraSPARC 5/10/etc."
  CFLAGS="-mcpu=ultrasparc -m32"
-   HOST="sparc-unknown-linux-gnu"
+   HOST="sparc-unknown-linux-${HOST_LIBC:-gnu}"
    FAST="-O3"
   SMALL="-Os"

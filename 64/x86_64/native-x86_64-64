@@ -2,13 +2,13 @@ CPUNAME="Auto-detected x86_64 architecture 64-bit mode"
 
 if use_gcc 3.3. || use_gcc 3.4. || use_gcc 4.0. || use_gcc 4.1. ; then
   CFLAGS="-march=x86-64 -fPIC -DPIC -m64"
-  HOST="x86_64-pc-linux-gnu"
+  HOST="x86_64-pc-linux-${HOST_LIBC:-gnu}"
 elif use_gcc2 ; then
   CFLAGS="-march=i486"
-  HOST="i486-pc-linux-gnu"
+  HOST="i486-pc-linux-${HOST_LIBC:-gnu}"
 else
   CFLAGS="-march=native -mtune=native -m64"
-  HOST="x86_64-pc-linux-gnu"
+  HOST="x86_64-pc-linux-${HOST_LIBC:-gnu}"
 fi
 
 FAST="-O3"

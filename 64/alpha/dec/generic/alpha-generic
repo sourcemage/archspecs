@@ -1,5 +1,5 @@
 CPUNAME="DEC/Compaq/HP Alpha (generic)"
 CFLAGS="-mieee -fPIC -DPIC"
-HOST="alpha-unknown-linux-gnu"
+HOST="alpha-unknown-linux-${HOST_LIBC:-gnu}"
 FAST="-O2"
 SMALL="-Os"

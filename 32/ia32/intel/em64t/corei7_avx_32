@@ -8,7 +8,7 @@ else
   CFLAGS="-march=corei7-avx -m32"
 fi
 
-HOST="x86_64-pc-linux-gnu"
+HOST="x86_64-pc-linux-${HOST_LIBC:-gnu}"
 FAST="-O3"
 SMALL="-Os"
 

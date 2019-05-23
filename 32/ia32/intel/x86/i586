@@ -1,5 +1,5 @@
 CPUNAME="Intel Pentium and clones"
  CFLAGS="-march=i586"
-   HOST="i586-pc-linux-gnu"
+   HOST="i586-pc-linux-${HOST_LIBC:-gnu}"
    FAST="-O2"
   SMALL="-Os"

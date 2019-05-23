@@ -1,5 +1,5 @@
 CPUNAME="DEC/Compaq Alpha EV67 (21264a CPU)"
 CFLAGS="-mieee -mcpu=ev67 -fPIC -DPIC"
-HOST="alphaev67-unknown-linux-gnu"
+HOST="alphaev67-unknown-linux-${HOST_LIBC:-gnu}"
 FAST="-O2"
 SMALL="-Os"
