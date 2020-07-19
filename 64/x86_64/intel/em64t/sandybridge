@@ -1,0 +1,14 @@
+CPUNAME="Intel Core Sandybridge"
+
+if use_gcc 3.3. || use_gcc 3.4. || use_gcc 4.0. || use_gcc 4.1. || use_gcc 4.2.; then
+  CFLAGS="-march=nocona -fPIC -DPIC"
+elif use_gcc2 ; then
+  CFLAGS="-march=i686"
+else
+  CFLAGS="-march=sandybridge -fPIC -DPIC"
+fi
+
+HOST="x86_64-pc-linux-${HOST_LIBC:-gnu}"
+FAST="-O3"
+SMALL="-Os"
+
